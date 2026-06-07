@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Streamore — Support</title>
+<meta name="description" content="Support and help for the Streamore app for iPhone, iPad and Apple TV.">
+<style>
+  :root{
+    --bg:#0e0f1a; --panel:#161826; --text:#e8e9f0; --muted:#a6a9bd;
+    --line:#262a3d; --accent:#17bff5; --grad1:#ed45c9; --grad2:#763dF2; --grad3:#17bff5;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:0 20px;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:56px 0 96px}
+  header{display:flex; align-items:center; gap:16px; margin-bottom:8px}
+  .mark{
+    width:54px; height:54px; border-radius:15px; flex:0 0 auto;
+    background:linear-gradient(135deg,var(--grad1),var(--grad2) 45%,var(--grad3));
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 10px 30px rgba(118,61,242,.35);
+  }
+  .mark svg{width:26px;height:26px;fill:#fff;filter:drop-shadow(0 1px 2px rgba(0,0,0,.3))}
+  h1{font-size:30px; margin:0; letter-spacing:-.2px}
+  .sub{color:var(--muted); margin:2px 0 0; font-size:14px}
+  .contact{
+    background:var(--panel); border:1px solid var(--line); border-radius:16px;
+    padding:20px 22px; margin:30px 0 40px;
+  }
+  .contact h2{margin:0 0 8px; font-size:15px; text-transform:uppercase; letter-spacing:1.2px; color:var(--accent)}
+  .contact p{margin:6px 0}
+  .email{font-size:19px; font-weight:600}
+  h2{font-size:21px; margin:38px 0 12px; letter-spacing:-.2px}
+  .q{font-size:17px; font-weight:600; margin:26px 0 4px; color:#fff}
+  p{margin:10px 0}
+  ul{padding-left:22px}
+  li{margin:7px 0}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  strong{color:#fff}
+  hr{border:none; border-top:1px solid var(--line); margin:40px 0}
+  footer{color:var(--muted); font-size:13px; margin-top:48px}
+  .nav{margin-top:14px; font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+    <div>
+      <h1>Streamore Support</h1>
+      <p class="sub">Help for Streamore on iPhone, iPad and Apple TV</p>
+    </div>
+  </header>
+
+  <div class="contact">
+    <h2>Get in touch</h2>
+    <p>Questions, bugs, or feedback? Email the developer and we’ll get back to you:</p>
+    <p class="email"><a href="mailto:nicolajdeveloper@gmail.com?subject=Streamore%20Support">nicolajdeveloper@gmail.com</a></p>
+    <p style="color:var(--muted);font-size:14px">It helps to include your device model, iOS/tvOS version, and what you were doing when the issue happened.</p>
+  </div>
+
+  <h2>About Streamore</h2>
+  <p>Streamore is a <strong>“bring your own media” player</strong>. It ships empty and plays content from sources <strong>you</strong> connect — there’s no built-in catalog, store, or content discovery. You stay in control of what you watch and where it comes from.</p>
+
+  <h2>Frequently asked questions</h2>
+
+  <p class="q">The app is empty — where’s the content?</p>
+  <p>That’s expected. Streamore is a player, not a content service. Open <strong>Settings → Sources</strong> and add your own source to start watching.</p>
+
+  <p class="q">What kinds of sources can I add?</p>
+  <ul>
+    <li><strong>Direct link</strong> — an HTTPS URL to a video file or stream.</li>
+    <li><strong>M3U playlist</strong> — a playlist URL or file.</li>
+    <li><strong>Xtream Codes</strong> — an IPTV server (host, username, and password).</li>
+  </ul>
+
+  <p class="q">A video won’t play or shows a black screen.</p>
+  <p>Streamore uses Apple’s built-in player by default and automatically falls back to a bundled FFmpeg-based engine for formats Apple can’t open. If something still won’t play, open <strong>Settings → Player</strong> and switch the playback engine (Automatic / AVKit / KSPlayer), then try again. Also double-check the source URL/credentials and that the stream works in another player.</p>
+
+  <p class="q">Posters and descriptions aren’t showing.</p>
+  <p>Artwork and descriptions are optional and powered by The Movie Database (TMDB). Add your own TMDB access token in <strong>Settings</strong> to enable metadata enrichment.</p>
+
+  <p class="q">How do I sync my library across my devices?</p>
+  <p>Streamore can sync your sources, favorites, watch progress, and profiles through your own private iCloud. Make sure you’re signed in to the same Apple Account on each device and that iCloud sync is enabled in <strong>Settings</strong>.</p>
+
+  <p class="q">How do profiles work?</p>
+  <p>You can create multiple profiles (like a household). Favorites, watch progress, and some preferences are kept per profile, while your connected sources are shared. Switch or manage profiles from the profile menu.</p>
+
+  <p class="q">How do I remove my data?</p>
+  <p>Delete sources, favorites, or profiles inside the app; turn off iCloud sync in Settings to stop syncing; or delete the app to remove its local data from a device. See the privacy policy for details.</p>
+
+  <hr>
+  <footer>
+    Streamore provides no content, sources, or discovery of its own. This product uses the
+    TMDB API but is not endorsed or certified by TMDB.
+    <div class="nav"><a href="./">Privacy Policy</a></div>
+  </footer>
+</div>
+</body>
+</html>
